@@ -1,5 +1,4 @@
-
- /* ifrome Scroll Bar Removal Fix */
+/* ifrome Scroll Bar Removal Fix */
  ::-webkit-scrollbar {
     display: none;
   }

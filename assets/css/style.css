@@ -13,11 +13,9 @@ body {
 
 /* Nav */
 .navbar {
-    display: flex;
-    
     --bs-navbar-brand-color: white;
     --bs-navbar-color: rgba(255,255,255,1);
-    --bs-navbar-active-color: rgba(255, 255, 255, 0.8) !important;
+    --bs-navbar-active-color: rgba(255, 255, 255, 0.8);
     --bs-navbar-hover-color: rgba(213, 36, 36, 0.8);
     background-color: rgb(47, 47, 47);
     /* background: linear-gradient(to right, rgba(50,50,50),  rgba(50,50,50,0.5)); */
@@ -25,7 +23,6 @@ body {
 }
 
 .navbar-brand {
-   
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
     border-radius: 5px;
@@ -72,26 +69,14 @@ a.nav-link {
 #iframeContainer {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding-top: 10px;
+   z-index: -2;
 }
 
 
 
-/* CSS */
-.button-85 {
-  padding: 5px;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #7a7979;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+/* Repurposed Animation */
+
 
 .navbar:before {
   content: "";
@@ -113,7 +98,7 @@ a.nav-link {
   border-radius: 10px;
 }
 
-@keyframes glowing-button-85 {
+@keyframes glowing-nav {
   0% {
     background-position: 0 0;
   }
@@ -125,16 +110,5 @@ a.nav-link {
   }
 }
 
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
 
 
