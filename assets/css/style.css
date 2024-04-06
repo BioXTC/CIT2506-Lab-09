@@ -1,3 +1,4 @@
+/* Base */
 html,
 body {
     width: 100%;
@@ -5,26 +6,9 @@ body {
 
 }
 
-.share-tech {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.silkscreen-regular {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.silkscreen-bold {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 body {
-    background-color: #606060;
+    /* background-color: #606060; */
+    background-color: rgb(47, 47, 47, 0.8);
 }
 
 header {
@@ -34,17 +18,15 @@ header {
     z-index: 0;
 }
 
-/* Nav */
 
+
+/* Navbar Base */
 .navbar {
     --bs-navbar-brand-color: white;
     --bs-navbar-color: rgba(255, 255, 255, 1);
     --bs-navbar-active-color: rgba(255, 255, 255, 0.8);
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(47, 47, 47, 1) !important;
-
-    /* background: linear-gradient(to right, rgba(50,50,50),  rgba(50,50,50,0.5)); */
-    /* background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7)); */
+    background-color: rgb(47, 47, 47) !important;
 }
 
 .navbar-brand {
@@ -58,11 +40,7 @@ header {
     background: -webkit-linear-gradient(rgb(34, 71, 205), rgb(153, 11, 219));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
-
-
-
 
 
 /* Nav Dropdown */
@@ -94,20 +72,13 @@ a.nav-link.dropdown-toggle.show::after {
 a.nav-link {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
-    /* box-shadow: 0 0 5px 4px inset rgba(255, 255, 255, 0.1); */
 }
-
-a.nav-link:hover {
-    /* box-shadow: 0 0 5px 5pxinset rgba(255, 255, 255, 0.4); */
-
-}
-
 
 #dropdownFinal-link {
     background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
 }
 
-
+/* index iframe */
 #iframeContainer {
     background-color: rgba(255, 192, 203, 0);
     width: 100%;
@@ -115,20 +86,63 @@ a.nav-link:hover {
     margin-top: 66px;
     padding-left: 0;
     padding-right: 0;
-    /* padding-top: 10px; */
+}
+
+/* About */
+#aboutContainer {
+    width: 90%;
+}
+
+#aboutImg-container {
+    max-width: 100%;
 
 }
 
 #aboutImg {
+    margin-right: 220px;
 }
 
 
-/* 
-Repurposed and edited button 85 animation for nav glow effect:
-https://getcssscan.com/css-buttons-examples
-*/
+#aboutText-container {
+    background-color: rgba(47, 47, 47, 0.9)
+}
+
+
+/* Utility */
+.text__bg-white {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.share-tech {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.share-tech-bold {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 nav::after {
+    /* 
+    Repurposed and edited button 85 animation for nav glow effect:
+    https://getcssscan.com/css-buttons-examples
+    */
     content: "";
     background: linear-gradient(45deg,
             rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205));
