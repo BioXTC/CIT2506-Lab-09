@@ -28,19 +28,19 @@ header {
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.8);
     --bs-navbar-toggler-border-color: rgb(34, 71, 205);
     --bs-navbar-toggler-border-radius: 2px;
-   
+
     background-color: rgb(47, 47, 47) !important;
 }
 
 .navbar-toggler:active,
 .navbar-toggler:focus {
     border: none !important;
-    
+
 }
 
 #hamburgerIcon {
     color: rgb(153, 11, 219);
-    
+
 }
 
 
@@ -75,17 +75,17 @@ header {
 
 /* Nav Dropdown */
 .dropdown-menu {
-    background: rgba(50, 50, 50, 1);
+    background: rgb(50, 50, 50);
     border: 0;
     padding-right: 20px;
 }
-
+    /* Nav Dropdown Caret Active*/
 a.nav-link.dropdown-toggle.show:after {
-    color: rgb(255, 255, 255);
+    color: rgba(153, 11, 219, 1);
 }
-
+    /* Nav Dropdown Caret */
 .nav-link.dropdown-toggle:after {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .dropdown-item {
@@ -108,10 +108,11 @@ a.nav-link {
 #dropdownFinal-link {
     background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
     box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2) inset;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
 }
-#dropdownFinal-link:hover{
+
+#dropdownFinal-link:hover {
     background: linear-gradient(to left, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
     box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2) inset;
 }
