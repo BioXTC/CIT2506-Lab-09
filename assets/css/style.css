@@ -1,15 +1,28 @@
-
 html,
 body {
     width: 100%;
     height: 100%;
-   
+
 }
+
 .share-tech {
-  font-family: "Share Tech Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-color: #606060;
 }
@@ -20,33 +33,41 @@ header {
     width: 100%;
     z-index: 0;
 }
+
 /* Nav */
 
 .navbar {
     --bs-navbar-brand-color: white;
-    --bs-navbar-color: rgba(255,255,255,1);
+    --bs-navbar-color: rgba(255, 255, 255, 1);
     --bs-navbar-active-color: rgba(255, 255, 255, 0.8);
-    --bs-navbar-hover-color: rgba(213, 36, 36, 0.8);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.8);
     background-color: rgba(47, 47, 47, 1) !important;
-    
+
     /* background: linear-gradient(to right, rgba(50,50,50),  rgba(50,50,50,0.5)); */
     /* background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7)); */
 }
 
 .navbar-brand {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    border-radius: 0 15px 0 15px;
-    box-shadow: 5px 5px 5px inset rgba(255, 255, 255, 0.3) !important;
-}
-.navbar-brand:hover {
-    color: white;
+    /* 
+    https://kinsta.com/blog/css-text-outline/ 
+    https://cssgradient.io/blog/css-gradient-text/
+    */
+    padding: 0;
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+    background: -webkit-linear-gradient(rgb(34, 71, 205), rgb(153, 11, 219));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
-    /* Nav Dropdown */
+
+
+
+
+/* Nav Dropdown */
 .dropdown-menu {
-    background: rgba(50,50,50,1);
+    background: rgba(50, 50, 50, 1);
     border: 0;
     padding-right: 20px;
 }
@@ -54,6 +75,7 @@ header {
 a.nav-link.dropdown-toggle.show::after {
     color: rgb(255, 255, 255);
 }
+
 .nav-link.dropdown-toggle::after {
     color: rgb(255, 255, 255);
 }
@@ -63,25 +85,30 @@ a.nav-link.dropdown-toggle.show::after {
     margin-left: 10px;
     border-radius: 5px;
 }
+
 .dropdown-item:hover {
-    background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7)); 
+    background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
     color: white;
 }
+
 a.nav-link {
-  background-color: rgba(0,0,0, 0);
-  border-radius: 5px;
-  /* box-shadow: 0 0 5px 4px inset rgba(255, 255, 255, 0.1); */
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px 4px inset rgba(255, 255, 255, 0.1); */
 }
+
 a.nav-link:hover {
-   /* box-shadow: 0 0 5px 5pxinset rgba(255, 255, 255, 0.4); */
+    /* box-shadow: 0 0 5px 5pxinset rgba(255, 255, 255, 0.4); */
+
 }
+
+
 #dropdownFinal-link {
-    background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7));
+    background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
 }
 
 
-#iframeContainer,
-#aboutContainer {
+#iframeContainer {
     background-color: rgba(255, 192, 203, 0);
     width: 100%;
     height: 100%;
@@ -89,46 +116,46 @@ a.nav-link:hover {
     padding-left: 0;
     padding-right: 0;
     /* padding-top: 10px; */
-  
+
 }
 
+#aboutImg {
+}
 
 
 /* 
 Repurposed and edited button 85 animation for nav glow effect:
 https://getcssscan.com/css-buttons-examples
 */
+
 nav::after {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(34, 71, 205),  rgba(153, 11, 219, 1.0), rgb(34, 71, 205),  rgba(153, 11, 219, 1.0),rgb(34, 71, 205)
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 100s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+    content: "";
+    background: linear-gradient(45deg,
+            rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205));
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 100s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
-@keyframes glowing-button-85{
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
-
-
-
