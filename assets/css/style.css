@@ -132,9 +132,14 @@ a.nav-link {
 
 /* About */
 #aboutContainer {
+   
     width: 90%;
 }
 
+#aboutRow-1 {
+    justify-content: center;
+    
+}
 #aboutImg-container {
     max-width: 100%;
 
@@ -146,12 +151,42 @@ a.nav-link {
 
 #aboutText-container {
     box-shadow: 
-    4px 4px 10px 0px  rgba(153, 11, 219, 0.15) inset, 
-    -3px -3px 10px 0px  rgba(34, 71, 205, 0.15) inset,
+    3px 3px 20px 3px  rgba(153, 11, 219, 0.1) inset, 
+    -3px -3px 20px 3px  rgba(34, 71, 205, 0.1) inset,
     2px 2px 15px rgba(0, 0, 0, 0.4);
-    background-color: rgba(47, 47, 47, 0.9)
+    background-color: rgba(47, 47, 47, 0.9);
+    max-width: 50%;
+    padding-bottom: 20px;
 }
 
+
+#aboutH1 {
+    text-shadow: 5px 4px 4px rgba(153, 11, 219, 0.4);
+}
+
+#aboutH2 {
+    text-shadow: 5px 4px 4px rgba(34, 71, 205, 0.4);
+}
+
+#aboutPara {
+    justify-content: center;
+    text-wrap: balance;
+}
+#aboutTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+   
+}
+/*
+#aboutLayered-bg {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    padding: 0 10px ;
+}
+*/
 
 /* Utility */
 .text__bg-white {
