@@ -19,7 +19,6 @@ header {
 }
 
 
-
 /* Navbar Base */
 .navbar {
     --bs-navbar-brand-color: white;
@@ -132,17 +131,17 @@ a.nav-link {
 
 /* About */
 #aboutContainer {
-   
+
     width: 90%;
 }
 
 #aboutRow-1 {
     justify-content: center;
-    
-}
-#aboutImg-container {
-    max-width: 100%;
 
+}
+
+#aboutImg-container {
+    margin-top: 5px;
 }
 
 #aboutImg {
@@ -150,43 +149,64 @@ a.nav-link {
 }
 
 #aboutText-container {
-    box-shadow: 
-    3px 3px 20px 3px  rgba(153, 11, 219, 0.1) inset, 
-    -3px -3px 20px 3px  rgba(34, 71, 205, 0.1) inset,
-    2px 2px 15px rgba(0, 0, 0, 0.4);
+    box-shadow:
+        -2px 2px 5px rgba(153, 11, 219, 0.4) inset,
+        -2px -2px 5px rgba(34, 71, 205, 0.2) inset,
+        2px 2px 5px rgba(34, 71, 205, 0.4) inset,
+        2px -2px 5px rgba(153, 11, 219, 0.2) inset,
+        2px 2px 15px rgba(0, 0, 0, 0.4);
     background-color: rgba(47, 47, 47, 0.9);
     max-width: 50%;
+    padding: 20px;
     padding-bottom: 20px;
 }
 
+#aboutPara-container {
+    margin-bottom: 20px;
+}
+
+#aboutH1,
+#aboutH2 {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+}
 
 #aboutH1 {
-    text-shadow: 5px 4px 4px rgba(153, 11, 219, 0.4);
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px rgba(153, 11, 219, 1);
+    text-decoration-color: rgba(153, 11, 219, 0.7);
 }
 
 #aboutH2 {
-    text-shadow: 5px 4px 4px rgba(34, 71, 205, 0.4);
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5);
+    text-decoration-color: rgba(34, 71, 205, 0.7);
 }
 
-#aboutPara {
+.para_styled-purple {
     justify-content: center;
     text-wrap: balance;
+    box-shadow:
+        -3px 3px rgba(153, 11, 219, 0.1) inset,
+        3px 0 15px rgba(0, 0, 0, 0.344);
+    border-radius: 10px;
 }
+
 #aboutTable {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-
-   
-}
-/*
-#aboutLayered-bg {
-    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow:
+        -3px 3px rgba(34, 71, 205, 0.1) inset,
+        3px 0 15px rgba(0, 0, 0, 0.344);
     border-radius: 10px;
-    padding: 0 10px ;
+    padding: 20px;
+    margin-left: 1%;
 }
-*/
+
+#aboutTable li {
+    margin-left: 5%;
+}
 
 /* Utility */
 .text__bg-white {
@@ -216,7 +236,6 @@ a.nav-link {
     font-weight: 700;
     font-style: normal;
 }
-
 
 nav::after {
     /* 
