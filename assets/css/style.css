@@ -138,22 +138,21 @@ a.nav-link {
 }
 #aboutContainer {
     background-color: rgb(47, 47, 47);
-    height: 100%;
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.272);
     border-radius: 10px;
 }
 
 #aboutImg-container {
-    margin-top: 5px;
+   
     
 }
 
 #aboutImg {
     /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4); */
     
-    width: 100%;
-    max-width: 500px;
+    height: 100%;
 }
 
 #aboutH1,
