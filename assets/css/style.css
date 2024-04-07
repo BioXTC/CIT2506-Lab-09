@@ -144,15 +144,18 @@ a.nav-link {
     border-radius: 10px;
 }
 
+#aboutText-container {
+    
+}
 #aboutImg-container {
-   
+  
     
 }
 
 #aboutImg {
     /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4); */
-    
-    height: 100%;
+    max-width: 600px;
+    width: 100%;
 }
 
 #aboutH1,
@@ -199,11 +202,13 @@ a.nav-link {
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 1%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #aboutTable li {
-    margin-left: 5%;
+   list-style-type: none;
+    margin: 0 auto;
 }
 
 
@@ -285,3 +290,17 @@ nav::after {
         background-position: 0 0;
     }
 }
+
+
+/* ifrome Scroll Bar Removal Fix */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+/* ifrome Scroll Bar Removal Fix End */
