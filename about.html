@@ -18,13 +18,13 @@
 <body class="text-light">
     <!--About-->
     <div class="container" id="aboutContainer">
-        <div class="row" id="aboutRow-1">
-            <div class="col-4" id="aboutImg-container">
-                <img src="assets\images\waif.jpg" alt="waif" class="img-fluid rounded mt-2" id="aboutImg">
-            </div>
-            <div class="col-8 mt-2 rounded" id="aboutText-container">
-                <h1 class="text-center share-tech-bold mt-1" id="aboutH1">About</h1>
-                <div class="fs-6 text-wrap pb-1 p-3 me-3 ms-3 para_styled-purple" id="aboutPara-container">
+        <!-- Row 1 -->
+        <div class="row" id="row-1">
+
+            <!-- About Col-->
+            <div class="col-12">
+                <h1 class="text-center share-tech-bold display-3" id="aboutH1">About</h1>
+                <div class="fs-6 text-wrap text-center pb-1 p-3 me-3 ms-3 para_styled-grey">
                     <p class="ps-2">
                         I grew up in the back country of Northern Ohio.
 
@@ -37,23 +37,31 @@
                         Information Technology, and make my brain more gooder.
                     </p>
                 </div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row d-flex" id="row-2">
+            <!-- Img Col-->
+            <div class="col-6 order-1" id="aboutImg-container">
+                <img src="assets\images\waif.jpg" alt="waif" class="img-fluid rounded mt-2 " id="aboutImg">
+            </div>
+            <!-- Fun Fact Col-->
+            <div class="col-6 mt-2 order-2 ">
                 <h2 class="text-center share-tech-bold" id="aboutH2">Fun Facts About Me</h2>
-                <div class="fs-6">
+                <div class="fs-6 para_styled-grey" id="aboutFacts">
                     <ul class="" id="aboutTable">
                         <li>I once fist fought 3 chickens at the same time, and lived to tell the tale.</li>
                         <li>I've thought about going sky diving, but haven't.</li>
                         <li>I used to be fork lift certified.</li>
                         <li>I have an 87% success rate with plugging in a USB-A cable the right try.</li>
                     </ul>
-
-
                 </div>
             </div>
-        </div>
-        <!--About End-->
-        <!--Scripts-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <!--Scripts End-->
+
+            <!--About End-->
+            <!--Scripts-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <!--Scripts End-->
 </body>
